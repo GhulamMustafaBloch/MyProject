@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root {
+    --main-bg-color: #2874f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--main-bg-color);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 137px;
+    padding: 0 31px;
+}
+nav {
+    display: flex;
+}
+
+nav ul {
+    height: 70px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: azure;
+}
+nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(120, 0, 90);
+    font-weight: bolder;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 30vw;
+    height: 27px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin: 0 16px 0 31px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+.slider{
+    width: 80vw;
+    margin: 12px auto;
+    overflow: hidden;
+}
+.container{
+    min-height: calc(100vh - 70px - 12vh);
+}
+.card{
+    max-width: 91vw;
+    margin: 37px auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card h2{
+    font-family: 'Lato', sans-serif;
+}
+.card_item{
+   width: 12vw;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   margin: 0 15px;
+}
+.card_item img{
+border-radius: 5px;
+}
+
+footer {
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Utils css */
+.flex_all_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 130px;
+    height: 27px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color:  var(--main-bg-color);
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+.my-1{
+    margin: 7px 0;
+}
+.my_2{
+    margin: 24px 0;
+}
+.text-center{
+    text-align: center;
+}
+
+/* responsive css */
+@media screen and (max-width:1000px){
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        justify-content: center;
+        margin: 12px 0;
+    }
+    nav ul{
+        justify-content: center;
+        height: 34px;
+    }
+    .search{
+        justify-content: center;
+    }
+    .search input{
+        margin: 12px 16px;
+    }
+    .slider{
+        height: 34vh;
+    }
+    .card_item{
+        margin: 0 15px;
+    }
+    .card_item{
+        width: 200px;
+    }
+    .cards{
+        flex-wrap: wrap;
+    }
+}
